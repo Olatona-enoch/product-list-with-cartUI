@@ -24,8 +24,8 @@ body{
     color: black;
 }
 .custom-btn:hover{
-    color: hsl(12, 71%, 43%);
-    border-color: hsl(12, 71%, 43%);
+    color: var(--Red);
+    border-color: var(--Red);
     background-color: white;
     
 }
@@ -36,20 +36,22 @@ body{
     border-radius: 10px;
 }
 .displaydiv{
+    align-self: center;
+    // justify-self: center;
     width: 100%;
-    height: 50%;
+    height: 56%;
 }
 .custom-darkbrown{
     color: var(--Rose-500);
 }
-.item-name{
+.item-details{
     color: var(--Rose-300);
 }
 .custom-black{
     color: var(--Rose-900);
 }
 .custom-lightbrown{
-    color:  hsl(12, 71%, 43%);
+    color:  var(--Red);
 }
 .matwwh{
     font-weight: 900;
@@ -59,20 +61,42 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .clicked-btn{
-    border-color: hsl(12, 71%, 43%);
-    background-color:hsl(12, 71%, 43%);
+    border-color: var(--Red);
+    background-color:var(--Red);
     width: 60%;
     padding: 10px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     i{
-        // border-radius:50px;
-        // border: 2px solid black;
-        // padding: 0px 5px;
+        position: relative;
+        overflow: hidden;
+        
     }
+    i:hover{
+        color:var(--Red) ;
+    }
+    i::after{
+        content: "";
+        position: absolute;
+        top: 4.5px;
+        left: 1.8px;
+        background-color: white;
+        height: 63%;
+        width: 85%;
+        border-radius: 30px;
+        z-index: -1;
+        display: none;
+        
+    }
+    i:hover::after{
+        display: block;
+        
+    }
+    
+   
    
     // <div class="fs-5 addsign">+</div>
     // .addsign{
@@ -82,15 +106,49 @@ body{
     // }
 }
 .clicked-btn:hover{
-    background-color:hsl(12, 71%, 43%);
+    background-color:var(--Red);
     color: white;
 }
 .bi-x-circle:hover{
    color: var(--Rose-900);
    cursor: pointer;
 }
-$enable-cssgrid: true;
-$enable-grid-classes: false;
-$grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
-$grid-row-columns: 6 !default;
+.custom-orderBtn{
+    color: var( --Rose-50);
+    border-radius: 30px;
+    background-color:var(--Red) ;
+    padding: 15px 0px;
+    border: 0;
+    font-size: 17px;
+}
+.thumbnail{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+.list-body{
+    background-color: var(--Rose-100);
+    width: 100%;
+}
+.custom-modal-li{
+    background-color: var(--Rose-100);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    // border-bottom: 0.05px solid rgb(183, 178, 178) ;
+}
+.custom-modalBtn{
+    color: var( --Rose-50);
+    border-radius: 30px;
+    background-color:var(--Red) ;
+    padding: 15px 0px;
+    border: 0;
+    font-size: 17px;
+    width: 85%;
+    align-self: center;
+
+}
+@media screen and (min-width:1000px) {
+    .displaydiv{
+        width: 90%;
+    }
+}

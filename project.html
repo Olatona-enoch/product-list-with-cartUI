@@ -16,15 +16,15 @@
 
 </head>
 <body>
-    <div class="container d-md-flex justify-content-center">
+    <div class="container d-lg-flex justify-content-center">
         <!---------items tray---------->
         
-        <div class="col">
-            <div class="container  text-center">
-                <header class="text-start display-1 my-4 custom-black fw-bold"> Desserts</header>
-                <div class="row">
+        <div class="col-lg-9 ps-lg-4 ">
+            <div class="container  text-center pe-xl-1">
+                <header class="text-start display-6  my-4 custom-black fw-bold"> Desserts</header>
+                <div class="row gx-xl-0 ">
                   <!---------Column 1---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-waffle-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -43,7 +43,7 @@
                         </div>
                   </div>
                   <!---------Column 2---------->
-                  <div class="col-auto col-lg-4 ">
+                  <div class="col-auto col-xl-4 col-md-6 ">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-creme-brulee-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -62,7 +62,7 @@
                         </div>     
                   </div>
                   <!---------Column 3---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-macaron-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -81,7 +81,7 @@
                         </div>   
                   </div>
                   <!---------Column 4---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn"
@@ -100,7 +100,7 @@
                         </div>        
                   </div>
                   <!---------Column 5---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-baklava-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -113,14 +113,14 @@
                                 &nbsp; Add to Cart
                             </button>
                         </div>
-                        <div class="mt-5 text-start">
+                        <div class="mt-5 text-start ">
                             <p class="mb-1 item-name">Baklava</p>
                             <p class="lead text-black fw-medium mb-1 item-variation">Pistachio Baklava</p>
                             <p class="fw-medium lead custom-lightbrown">$4.00</p>
                         </div>         
                   </div>
                   <!---------Column 6---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-meringue-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill  custom-btn"
@@ -139,7 +139,7 @@
                         </div>       
                   </div>
                   <!---------Column 7---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-cake-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -159,7 +159,7 @@
                         </div>       
                   </div>
                   <!---------Column 8---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-brownie-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -179,7 +179,7 @@
                         </div>      
                   </div>
                   <!---------Column 9---------->
-                  <div class="col-auto col-lg-4">
+                  <div class="col-auto col-xl-4 col-md-6">
                         <div class="position-relative displaydiv">
                             <img src="assets/images/image-panna-cotta-desktop.jpg" alt="" class="custom-image">
                             <button class="position-absolute top-100 start-50 translate-middle btn rounded-pill custom-btn "
@@ -204,29 +204,102 @@
         </div>
 
         <!---------Cart---------->
-        <div class="col-auto col-lg-3 my-4">
-            <div class="card border-white custom-lightbrown" style="width: 100%;">
+        <div class="col-auto col-lg-4 my-4 pt-2 pe-lg-2">
+            <div class="card border-white " style="width: 100%;">
                 <div class="card-body">
-                  <h4 class="card-title fw-bold ">Your Cart(0)</h4>
+                  <h4 class="card-title fw-bold custom-lightbrown " id="cartcounter">Your Cart(0)</h4>
                 </div>
                 <ul class="list-group list-group-flush" id="cart-items">
-                  <li class="list-group-item d-flex align-items-center justify-content-between">
-                    <div> 
-                      <p class="fw-medium item-variation mb-0"> Classic Tiramisu</p>
-                      <p class="item-name"><span class="custom-lightbrown fw-semibold">1x</span> &nbsp; &nbsp; <span>@$5.50</span> &nbsp; &nbsp;<span class="custom-darkbrown fw-medium">$5.50</span> </p>
+                    <div class="text-center">
+                        <img src="assets/images/illustration-empty-cart.svg" alt=""  class="w-25"> 
+                        <p class="custom-darkbrown my-4"> Your added items will appear here</p>             
                     </div>
-                    <i class="bi bi-x-circle custom-darkbrown fs-5 mb-3 "></i>
-                  </li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+
+                <div class="card-body " id="bottomCard">
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " >
+            <div class="modal-content">
+                <div class="modal-body  rounded mx-1">
+                    <div class="  ms-0 d-flex flex-column justify-content-start align-items-start">
+                        <img src="assets/images/icon-order-confirmed.svg" alt="" class="w-10 my-3">
+                        <h1 class="modal-title fs-1 custom-black fw-bold" id="staticBackdropLabel"> Order Confirmed</h1>
+                        <p class="custom-darkbrown small">We hope you enjoy your food </p>
+                    </div>
+    
+                    <div class="list-body rounded pt-2 " style="width:100%;">
+                        <ul class=" list-group list-group-flush " id="modal-ul">
+                            <li class=" list-group-item d-flex  align-items-center justify-content-between  mb-0 custom-modal-li">
+                                <div class="d-flex align-items-center ">
+                                    <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="thumbnail me-3 rounded">
+                                    <div class="">
+                                        <p class="fw-medium custom-black mb-2">Classic Tiramisu</p>
+                                        <p class="item-details mb-0"> <span class="custom-lightbrown"> 1x</span>  &nbsp; <span>@$5.50</span> </p>
+                                    </div>  
+                                </div>
+                                <div class="text-center ms-5"> 
+                                    <p>$5.50</p>
+                                </div>   
+                            </li>
+                            <li class="list-group-item  d-flex  align-items-center justify-content-between  mb-0 custom-modal-li">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="thumbnail me-3 rounded">
+                                    <div class="">
+                                        <p class="fw-medium custom-black mb-2">Classic Tiramisu</p>
+                                        <p class="item-details mb-0"> <span class="custom-lightbrown"> 1x</span>  &nbsp; <span>@$5.50</span> </p>
+                                    </div>  
+                                </div>
+                                <div class="text-center ms-5"> 
+                                    <p>$5.50</p>
+                                </div>   
+                            </li>
+                            <li class=" list-group-item d-flex  align-items-center justify-content-between  mb-0 custom-modal-li ">
+                                <div class="d-flex  align-items-center">
+                                    <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="thumbnail me-3 rounded">
+                                    <div class="">
+                                        <p class="fw-medium custom-black mb-2">Classic Tiramisu</p>
+                                        <p class="item-details mb-0"> <span class="custom-lightbrown"> 1x</span>  &nbsp; <span>@$5.50</span> </p>
+                                    </div>  
+                                </div>
+                                <div class="text-center ms-5"> 
+                                    <p>$5.50</p>
+                                </div>   
+                            </li>
+                            <li class=" list-group-item d-flex  align-items-center justify-content-between  mb-0 custom-modal-li ">
+                                <div class="d-flex  align-items-center">
+                                    <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="thumbnail me-3 rounded">
+                                    <div class="">
+                                        <p class="fw-medium custom-black mb-2">Classic Tiramisu</p>
+                                        <p class="item-details mb-0"> <span class="custom-lightbrown"> 1x</span>  &nbsp; <span>@$5.50</span> </p>
+                                    </div>  
+                                </div>
+                                <div class="text-center ms-5"> 
+                                    <p>$5.50</p>
+                                </div>  
+                            </li>
+            
+                        </ul>
+                        <div class="d-flex align-items-center justify-content-between mx-4 pt-4 pb-1 border-top">
+                            <p> Order Total</p>
+                            <p class="fs-3 custom-black  fw-bold" id="finalPrice">$46.50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="custom-modalBtn align-self-center my-5" data-bs-dismiss="modal" onclick="clearCart()">Start New Order </button>
+            
+            </div>
+        </div>
+  </div>
 
 
 
@@ -234,7 +307,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Olatona Enoch</a>.
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

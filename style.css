@@ -23,8 +23,8 @@ body {
 }
 
 .custom-btn:hover {
-  color: hsl(12, 71%, 43%);
-  border-color: hsl(12, 71%, 43%);
+  color: var(--Red);
+  border-color: var(--Red);
   background-color: white;
 }
 
@@ -37,15 +37,16 @@ body {
 }
 
 .displaydiv {
+  align-self: center;
   width: 100%;
-  height: 50%;
+  height: 56%;
 }
 
 .custom-darkbrown {
   color: var(--Rose-500);
 }
 
-.item-name {
+.item-details {
   color: var(--Rose-300);
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 .custom-lightbrown {
-  color: hsl(12, 71%, 43%);
+  color: var(--Red);
 }
 
 .matwwh {
@@ -72,8 +73,8 @@ body {
 }
 
 .clicked-btn {
-  border-color: hsl(12, 71%, 43%);
-  background-color: hsl(12, 71%, 43%);
+  border-color: var(--Red);
+  background-color: var(--Red);
   width: 60%;
   padding: 10px;
   color: white;
@@ -81,12 +82,79 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.clicked-btn i {
+  position: relative;
+  overflow: hidden;
+}
+.clicked-btn i:hover {
+  color: var(--Red);
+}
+.clicked-btn i::after {
+  content: "";
+  position: absolute;
+  top: 4.5px;
+  left: 1.8px;
+  background-color: white;
+  height: 63%;
+  width: 85%;
+  border-radius: 30px;
+  z-index: -1;
+  display: none;
+}
+.clicked-btn i:hover::after {
+  display: block;
+}
+
 .clicked-btn:hover {
-  background-color: hsl(12, 71%, 43%);
+  background-color: var(--Red);
   color: white;
 }
 
 .bi-x-circle:hover {
   color: var(--Rose-900);
   cursor: pointer;
+}
+
+.custom-orderBtn {
+  color: var(--Rose-50);
+  border-radius: 30px;
+  background-color: var(--Red);
+  padding: 15px 0px;
+  border: 0;
+  font-size: 17px;
+}
+
+.thumbnail {
+  width: 20%;
+  height: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-body {
+  background-color: var(--Rose-100);
+  width: 100%;
+}
+
+.custom-modal-li {
+  background-color: var(--Rose-100);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.custom-modalBtn {
+  color: var(--Rose-50);
+  border-radius: 30px;
+  background-color: var(--Red);
+  padding: 15px 0px;
+  border: 0;
+  font-size: 17px;
+  width: 85%;
+  align-self: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .displaydiv {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
