@@ -26,7 +26,7 @@ btns.forEach((btn) => {
 
         // Add item to cart
         updateBtn(btn, newItem);
-        updateCart();
+        updateCart();c
     });
 });
 
